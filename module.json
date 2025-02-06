@@ -4,10 +4,9 @@
   "description": "",
   "version": "#{VERSION}#",
   "library": "false",
-  "manifestPlusVersion": "1.2.0",
   "compatibility": {
-    "minimum": 10,
-    "verified": 10
+    "minimum": 12,
+    "verified": 12
   },
   "authors": [
     {
