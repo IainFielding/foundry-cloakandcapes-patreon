@@ -49,7 +49,7 @@
     },
     {
       "name": "actors",
-      "label": "Pack Actors",
+      "label": "Actors",
       "path": "packs/actors",
       "type": "Actor",
       "ownership": {
@@ -82,7 +82,29 @@
       },
       "system": "dnd5e",
       "flags": {}
-    }
+    },
+    {
+      "name": "roll-tables",
+      "label": "Roll Tables",
+      "path": "packs/roll-tables",
+      "type": "RollTable",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "scenes",
+      "label": "Scenes",
+      "path": "packs/scenes",
+      "type": "Scene",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "dnd5e"
+    }   
   ],
   "packFolders": [
     {
@@ -90,10 +112,12 @@
         "color": "#a428e6",
         "sorting": "m",
         "packs": [
-            "contnet",
+            "content",
             "actors",
             "items",
-            "subclasses"
+            "subclasses",
+            "roll-tables",
+            "scenes"
         ]
     }
   ],
