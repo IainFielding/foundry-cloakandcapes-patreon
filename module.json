@@ -1,20 +1,18 @@
 {
-  "id": "module",
-  "title": "New Module",
+  "id": "cloaks-and-capes-patreon",
+  "title": "Cloaks & Capes Patreon",
   "description": "",
   "version": "#{VERSION}#",
   "library": "false",
   "manifestPlusVersion": "1.2.0",
   "compatibility": {
     "minimum": 10,
-    "verified": 10,
-    "maximum": 11
+    "verified": 10
   },
   "authors": [
     {
-      "name": "The League of Extraordinary FVTT Developers",
-      "url": "https://github.com/League-of-Foundry-Developers",
-      "discord": "discordID#0001"
+      "name": "Cloaks & Capes TTRPG",
+      "url": "https://www.patreon.com/c/CloaksandCapes/posts"
     }
   ],
   "relationships": {
@@ -37,6 +35,69 @@
       "path": "languages/en.json"
     }
   ],
+  "packs": [
+    {
+      "name": "content",
+      "label": "Cloaks & Capes Journal",
+      "path": "packs/content",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "dnd5e",
+      "flags": {}
+    },
+    {
+      "name": "actors",
+      "label": "Pack Actors",
+      "path": "packs/actors",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "dnd5e",
+      "flags": {}
+    },
+    {
+      "name": "items",
+      "label": "Magic Items",
+      "path": "packs/items",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "dnd5e",
+      "flags": {}
+    },
+    {
+      "name": "subclasses",
+      "label": "Subclasses",
+      "path": "packs/subclasses",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "dnd5e",
+      "flags": {}
+    }
+  ],
+  "packFolders": [
+    {
+        "name": "Cloaks & Capes TTRPG",
+        "color": "#a428e6",
+        "sorting": "m",
+        "packs": [
+            "contnet",
+            "actors",
+            "items",
+            "subclasses"
+        ]
+    }
+  ],
   "url": "#{URL}#",
   "manifest": "#{MANIFEST}#",
   "download": "#{DOWNLOAD}#",
@@ -47,5 +108,13 @@
       "type": "icon",
       "url": "https://avatars2.githubusercontent.com/u/71292812?s=400&u=ccdb4eeb7abf551ca8f314e5a9bfd0479a4d3d41&v=4"
     }
-  ]
+  ],
+  "flags": {
+    "hotReload": false,
+    "dnd5e": {
+        "sourceBooks": {
+            "Cloaks & Capes": "Cloaks & Capes"
+        }
+      }
+    }
 }
